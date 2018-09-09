@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home::Lonewolf</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+        $(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+        
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+</head>
+<body id="page">
+    <div class="se-pre-con"></div>
+    <section class="header">
+        <div class="icon-bar">
+            <a href="https://facebook.com/Mzislam25" class="facebook"><i class="fa fa-facebook"></i></a> 
+            <a href="https://twitter.com/mzislam25" class="twitter"><i class="fa fa-twitter"></i></a> 
+            <a href="https://plus.google.com/+ZahirulIslam25" class="google"><i class="fa fa-google"></i></a> 
+            <a href="https://linkedin.com/in/Mzislam25" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UCuVq5k_tp1hWun1ruiUINXA" class="youtube"><i class="fa fa-youtube"></i></a>
+        </div>
+
+        <div class="bgimg-1">
+            <div class="navbar">
+                <div class="topnav" id="myTopnav">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Project</a>
+                    <a href="#">Code Shop</a>
+                    <a href="#">News</a>
+                    <a href="#">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="navFunction()"><i class="fa fa-bars"></i></a>
+                </div>
+                <script>
+                    function navFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="caption">
+                <span class="border">Mohammad Zahirul Islam</span><br>
+                <span class="border">&lt;/&gt;</span><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h3 class="title">About Me</h3>
+            <p class="subtitle"><i>Sometimes it's only madness that makes us what we are- Arkham Asylum: A serious house on serious earth.</i></p>
+            <p class="description">Hi! I'm Mohammad Zahirul Islam, I completed my Bsc in Computer Science and Engineering from BRAC University, Bangladesh. My professional expertise lies in web based technology and embedded systems. I am in deep love with robotics. And I like to travel. I have traveled a lot of places in Bangladesh. Also I have traveled Kolkata, Mumbai, Chennai, Vellore in India and Utah, New York in the USA.</p>
+            <p class="description">Get a deeper insight into who I am as a person. My path as a Back-End developer has led me to a focus in PHP and Java. I've designed web and mobile app solutions driving continuous improvement to processes, systems, work flow and customer responsiveness..</p>
+        </div>
+    </section>
+
+    <section class="experience">
+        <div class="container">
+            <div class="row-3">
+                <div class="col-3">
+                    <i class="fa fa-handshake-o"></i>
+                    <h2>Freelance</h2>
+                    <p>Feel free to knock me if I'm able to work for you.</p>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-cogs"></i>
+                    <h2>Project</h2>
+                    <p>Let's work on something amazing together like robots, websites, application.</p>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-registered"></i>
+                    <h2>Research</h2>
+                    <p>Find the latest research, reviews and news.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn-bg dark">Learn More</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="project">
+        <div class="container">
+            <h3 class="title">My Latest Projects</h3>
+            <div id="btn-container">
+                <button class="btn dark active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn dark" onclick="filterSelection('website')"> Website</button>
+                <button class="btn dark" onclick="filterSelection('desktop')"> Desktop</button>
+                <button class="btn dark" onclick="filterSelection('mobile')"> Mobile</button>
+            </div><br>
+            <div class="row-3">
+                <div class="col-3 website">
+                    <div class="img-overlay">
+                        <img class="img" src="images/mt_web_demo.png">
+                        <div class="overlay">
+                            <i>Website</i>
+                            <div class="text">BRACU Mongol-Tori</div><br>
+                            <button class="btn white" onclick="openProModal();currentProject(1)">View Projcet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 website">
+                    <div class="img-overlay">
+                        <img class="img" src="images/clima_demo.png" alt="">
+                        <div class="overlay">
+                            <i>Website</i>
+                            <div class="text">Clima</div><br>
+                            <button class="btn white" onclick="openProModal();currentProject(2)">View Projcet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 website">
+                    <div class="img-overlay">
+                        <img class="img" src="images/bpos_demo.png" alt="">
+                        <div class="overlay">
+                            <i>Web Application</i>
+                            <div class="text">BPOS</div><br>
+                            <button class="btn white" onclick="openProModal();currentProject(6)">View Projcet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 desktop">
+                    <div class="img-overlay">
+                        <img class="img" src="images/control_gui.jpg" alt="">
+                        <div class="overlay">
+                            <i>Application</i>
+                            <div class="text">Rover Control GUI</div><br>
+                            <button class="btn white" onclick="openProModal();currentProject(4)">View Projcet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 desktop">
+                    <div class="img-overlay">
+                        <img class="img" src="images/science_gui.jpg" alt="">
+                        <div class="overlay">
+                            <i>Application</i>
+                            <div class="text">Graphical Weather Station</div><br>
+                            <button class="btn white" onclick="openProModal();currentProject(5)">View Projcet</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 other">
+                    <div class="img-overlay">
+                        <img class="img" src="images/mt_demo.jpg" alt="">
+                        <div class="overlay">
+                            <i>Mars Rover</i>
+                            <div class="text">Mongol-Tori</div><br>
+                            <button class="btn white" onclick="openProModal();currentProject(3)">View Projcet</button>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    filterSelection("all")
+                    function filterSelection(c) {
+                        var x, i;
+                        x = document.getElementsByClassName("col-3");
+                        if (c == "all") c = "";
+                        for (i = 0; i < x.length; i++) {
+                            removeClass(x[i], "show");
+                            if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+                        }
+                    }
+
+                    function addClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                        }
+                    }
+
+                    function removeClass(element, name) {
+                        var i, arr1, arr2;
+                        arr1 = element.className.split(" ");
+                        arr2 = name.split(" ");
+                        for (i = 0; i < arr2.length; i++) {
+                            while (arr1.indexOf(arr2[i]) > -1) {
+                                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                            }
+                        }
+                        element.className = arr1.join(" ");
+                    }
+
+
+                    var btnContainer = document.getElementById("btn-container");
+                    var btns = btnContainer.getElementsByClassName("btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        btns[i].addEventListener("click", function(){
+                            var current = btnContainer.getElementsByClassName("active");
+                            current[0].className = current[0].className.replace(" active", "");
+                            this.className += " active";
+                        });
+                    }
+                </script>
+
+            </div>
+            <div class="text-center">
+                <button class="btn-bg dark">View More Projcets</button>
+            </div>
+
+            <div class="pro-modal" id="pro-modal">
+                <button class="btn-sm dark toogle-btn" onClick="closeProModal();">X</button>
+                <div class="projectSlides">
+                    <h2>BRACU Mongol-Tori</h2>
+                    <div class="pro-content">
+                        <div class="pro-brief">
+                            <i>Website, Codeigniter</i><br><br>
+                            <p>This project is a team website created for team BRACU Mongol-Tori. The website represents the team details, rover gallery and their journey to University Rover Challenge, world's premier robotics competition for univerisity students, organized by The Mars Society.</p><br><br>
+                            <img class="img-responsive" src="images/mt_web_demo.png">
+                        </div>
+                        <div class="pro-details">
+                            <img class="img-responsive" src="images/mt_web_1.png">
+                            <img class="img-responsive" src="images/mt_web_2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectSlides">
+                    <h2>Clima</h2>
+                    <div class="pro-content">
+                        <div class="pro-brief">
+                            <i>Website, Codeigniter, Android, Graphs, Charts</i><br><br>
+                            <p>Clima is a real time weather report application. It comes with two options website and android application. This is a research based project based on climate data to monitor air quality of a certain place. There are several graphical data representation in this project.</p><br><br>
+                            <img class="img-responsive" src="images/clima_demo.png">
+                        </div>
+                        <div class="pro-details">
+                            <img class="img-responsive" src="images/clima_2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectSlides">
+                    <h2>BPOS-Sales & Inventory management system.</h2>
+                    <div class="pro-content">
+                        <div class="pro-brief">
+                            <i>Web Application, Codeigniter, Ajax, Barcode</i><br><br>
+                            <p>This is a fully functional POS software for sales & inventory management.</p><br><br>
+                            <img class="img-responsive" src="images/bpos_demo.png">    
+                        </div>
+                        <div class="pro-details">
+                            <img class="img-responsive" src="images/bpos_1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectSlides">
+                    <h2>Robot Control GUI</h2>
+                    <div class="pro-content">
+                        <div class="pro-brief">
+                            <i>Java, Python 3, PyQt5</i><br><br>
+                            <p>This is a java based serial communication application. By connectiong with robots via serial connection, robots can be easily operated. This application makes the control of remote device very easy. This GUI is used in mongol-tori for controlling and navigating the rover.</p><br><br>
+                            <img class="img-responsive" src="images/control_gui.jpg">
+                        </div>
+                        <div class="pro-details">
+                            <p>The updated version of this gui is a Python based TCP/IP server and client socket application which is more powerful and robust.</p><br><br>
+                            <img class="img-responsive" src="images/control_gui_2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectSlides">
+                    <h2>Graphical weather station</h2>
+                    <div class="pro-content">
+                        <div class="pro-brief">
+                            <i>C#, Arduino, Serial Communication</i><br><br>
+                            <p>In this project I have put together a Weather Station using a variety of sensors. The platform being used is an Arduino board with other sensors e.g. CO Sensor (MQ7), CO2 Sensor (MQ135), H2 (MQ8), Temperature & Humidity Sensor (DHT22), Soil Temperature Sensor (DS18B20) and Soil Moisture Sensor. The GUI is developed in C# interprets the sensor readings into custom gauges which offer a graphical perception that makes it easy to distinguish between different states of perception.</p><br><br>
+                            <img class="img-responsive" src="images/science_gui.jpg">
+                        </div>
+                        <div class="pro-details">
+                            <img class="img-responsive" src="images/science_gui_2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="projectSlides">
+                    <h2>Mongol-Tori Revolution</h2>
+                    <div class="pro-content">
+                        <div class="pro-brief">
+                            <i>Robotics, Control, Software</i><br><br>
+                            <img class="img-responsive" src="images/mt_2.png"><br><br>
+                            <p>Mongol-Tori Revolution is a next generation mars rover developed by BRAC University. I am the Team Lead of this project. It was built for University Rover Challenge (URC), organized by The Mars Society. The competition took place atthe Mars Desert Reserch Station (MDRS), Hanksville, Utah, USA. We secured 13th place in URC 2018 and 18th place in URC 2017. The project is going on. We also participated in IRC 2018 in India, Digital World 2017, Bangladesh.</p><br><br>
+                        </div>
+                        <div class="pro-details">
+                            <img class="img-responsive" src="images/mt_1.png">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pro-actions">
+                    <button class="btn danger" onClick="closeProModal();">Close</button>
+                </div>
+            </div>
+            <script>
+                function openProModal() {
+                    document.getElementById('pro-modal').style.display = "block";
+                    document.getElementById('page').style.overflow = "hidden";
+                }
+                function closeProModal() {
+                    document.getElementById('pro-modal').style.display = "none";
+                    document.getElementById('page').style.overflow = "auto";
+                }
+                var proIndex = 1;
+                showProject(proIndex);
+
+                function currentProject(n) {
+                    showProject(proIndex = n);
+                }
+
+                function showProject(n) {
+                    var i;
+                    var projects = document.getElementsByClassName("projectSlides");
+                    if (n > projects.length) {proIndex = 1}
+                    if (n < 1) {proIndex = projects.length}
+                    for (i = 0; i < projects.length; i++) {
+                        projects[i].style.display = "none";
+                    }
+                    projects[proIndex-1].style.display = "block";
+                }
+            </script>
+
+        </div>
+    </section>
+    
+    <section class="agile">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <img src="images/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                    <img src="images/8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                </div>
+            </div>
+
+            <div id="galleryModal" class="gallery-modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="gallery-modal-content">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 8</div>
+                        <img class="img-demo" src="images/1.jpg" alt="Little Cottonwood Canyon" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 8</div>
+                        <img class="img-demo" src="images/2.jpg" alt="Corvette, New Tork, USA">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 8</div>
+                        <img class="img-demo" src="images/3.jpg" alt="Hoover Dam, Colorado river, Nevada">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 8</div>
+                        <img class="img-demo" src="images/4.jpg" alt="Team BRACU Mongol-Tori">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 8</div>
+                        <img class="img-demo" src="images/5.jpg" alt="Helicopter Tour">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 8</div>
+                        <img class="img-demo" src="images/6.jpg" alt="Helicopter Tour">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 8</div>
+                        <img class="img-demo" src="images/7.jpg" alt="Hoover Dam, Colorado river, Nevada">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 8</div>
+                        <img class="img-demo" src="images/8.jpg" alt="Mongol-Tori Revolution">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                function openModal() {
+                    document.getElementById('galleryModal').style.display = "block";
+                }
+
+                function closeModal() {
+                    document.getElementById('galleryModal').style.display = "none";
+                }
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var txt = document.getElementsByClassName("img-demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < txt.length; i++) {
+                        txt[i].className = txt[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    txt[slideIndex-1].className += " active";
+                    captionText.innerHTML = txt[slideIndex-1].alt;
+                }
+            </script>
+        </div>
+    </section>
+    
+    <section class="full-video">
+        <div class="bg-video">
+            <video autoplay muted loop id="myVideo">
+            <source src="video/videoplayback.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="content">
+                <button id="videoBtn" onclick="functionVideo()">Pause</button>
+                <h1>System Acceptance Review</h1>
+                <p>University Rover Challenge 2018, The Mars Society</p>
+            </div>
+        </div>
+        
+        <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("videoBtn");
+
+            function functionVideo() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+        </script>
+    </section>
+    
+    <section class="footer">
+        <div class="container">
+            <div class="text-center">
+                <a href="https://www.facebook.com/Mzislam25" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com/mzislam25" class="fa fa-twitter"></a>
+                <a href="https://plus.google.com/+ZahirulIslam25" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/Mzislam25" class="fa fa-linkedin"></a>
+            </div>
+            <p>@ Zahir. All rights reserved.</p>
+        </div>
+    </section>
+    
+    
+    <button onclick="topFunction()" id="scrollBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+</body>
+</html>

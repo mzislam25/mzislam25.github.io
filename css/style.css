@@ -1,0 +1,684 @@
+* {box-sizing: border-box}
+
+.header, body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    scroll-behavior: smooth;
+}
+#page::-webkit-scrollbar {
+    width: 3px;
+    background: transparent; 
+}
+#page::-webkit-scrollbar-thumb {
+    background: #303030;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(images/Preloader_2.gif) center no-repeat #fff;
+}
+.header .bgimg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/7.jpg) no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.header .caption {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    text-align: center;
+    color: #000;
+}
+
+.header .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.header .caption h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+/*-------- navbar ---------*/
+.navbar {
+    position: absolute;
+    margin: 20px;
+    width: 90%;
+}
+.topnav {
+    float: right;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 4px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    letter-spacing: 3px;
+}
+.topnav a:hover {
+    font-weight: bold;
+    border: 1px solid #fff;
+}
+.topnav .active{
+    font-weight: bold;
+}
+.topnav .icon {
+    display: none;
+}
+/*-------- navbar ---------*/
+
+/*--------sticky social media-------*/
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+.icon-bar a:hover {
+    background-color: #000;
+}
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+.google {
+    background: #dd4b39;
+    color: white;
+}
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+.youtube {
+    background: #bb0000;
+    color: white;
+}
+/*--------sticky social media-------*/
+
+
+.about, .experience, .project, .agile, .full-video{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.subtitle{
+    font-style: italic;
+}
+
+.description{
+    font-family: sans-serif;
+    text-align: justify-all;
+    width: 75%;
+  	margin: auto;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+
+.col-3 {
+    display: none;
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    height: 270px;
+    text-align: center;
+}
+
+.hide{
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.row-3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-responsive {
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+}
+
+.btn {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: verdana;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.btn-sm{
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 7px 14px;
+    font-size: 10px;
+    font-family: verdana;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-bg{
+    border: 3px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 14px 28px;
+    font-size: 14px;
+    font-family: verdana;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.success {
+    border-color: #4CAF50;
+    color: green;
+}
+.success:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+.info {
+    border-color: #2196F3;
+    color: dodgerblue
+}
+.info:hover {
+    background: #2196F3;
+    color: white;
+}
+.warning {
+    border-color: #ff9800;
+    color: orange;
+}
+.warning:hover {
+    background: #ff9800;
+    color: white;
+}
+.danger {
+    border-color: #f44336;
+    color: red
+}
+.danger:hover {
+    background: #f44336;
+    color: white;
+}
+.default {
+    border-color: #e7e7e7;
+    color: black;
+}
+.default:hover {
+    background: #e7e7e7;
+}
+.white {
+    border-color: #fff;
+    color: white;
+}
+.white:hover {
+    background: #fff;
+    color: black;
+}
+.dark{
+    border-color: #303030;
+    color: black;
+}
+.dark:hover{
+    background: #303030;
+    color: white;
+}
+.dark.active {
+  background-color: #303030;
+  color: white;
+}
+
+
+
+
+.about{
+    background: #EDFEEF;   
+}
+.experience i{
+    font-size: 36px;
+}
+.experience h3{
+    font-family: PT Sans;
+    font-weight: bold;
+}
+
+/*-------project--------*/
+.project{
+    background: #EDFEEF;
+}
+
+.project i{
+    color: #fff;
+    font-size: 10px;
+}
+.project .text {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.project .img-overlay {
+    position: relative;
+}
+.project .img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(70%);
+}
+.project .overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.project .img-overlay:hover .img {
+    filter: brightness(30%);
+}
+.project .img-overlay:hover .overlay {
+    opacity: 1;
+}
+.pro-modal::-webkit-scrollbar {
+    width: 1px; 
+    background: transparent; 
+}
+.pro-modal::-webkit-scrollbar-thumb {
+    background: #303030;
+}
+.pro-modal {
+    display: none;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 12.5%;
+    background: white;
+    border: 1px solid #ccc;
+}
+.pro-modal h2 {
+    padding: 1rem;
+    margin: 0;
+    text-align: left;
+}
+.pro-content {
+    text-align: left;
+    width: 90%;
+    margin: auto;
+}
+.pro-brief i{ 
+    color: #999;
+    font-size: 12px;
+}
+.pro-brief p{
+    width: 90%;
+    margin: auto;
+}
+.pro-details{
+    background: #EDFEEF;
+    padding: 50px 90px;
+}
+.pro-actions {
+    border-top: 1px solid #ccc;
+    background: #eee;
+    padding: 0.5rem 1rem;
+    text-align: right;
+}
+.toogle-btn{
+    float: right;
+}
+/*--------project------*/
+
+/*--------agile------*/
+.agile .row > .column {
+    padding: 0 8px;
+}
+
+.agile .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.agile .column {
+    float: left;
+    width: 23.3%;
+}
+
+.gallery-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: black;
+}
+
+.img-demo{
+    width: 90%;
+    max-height: calc(100vh - 0px);
+    background: transparent;
+}
+
+.gallery-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+}
+
+.agile .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.agile .close:hover,
+.agile .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.agile .mySlides {
+    display: none;
+}
+
+.agile .cursor {
+    cursor: pointer;
+}
+
+.agile .prev,
+.agile .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.agile .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.agile .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.agile .prev:hover,
+.agile .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.agile .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.agile img {
+    margin-bottom: -4px;
+}
+
+.agile .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.agile .demo {
+    opacity: 0.6;
+} 
+
+.agile .active,
+.agile .demo:hover {
+    opacity: 1;
+}
+
+.agile img.hover-shadow {
+    transition: 0.3s;
+}
+
+.agile .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*agile*/
+
+/*video*/
+.bg-video{
+    position: relative;
+}
+#myVideo {
+    width: 100%; 
+    height: 100%;
+}
+
+
+.bg-video .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#videoBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px soild #000;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#videoBtn:hover {
+    background: #ddd;
+    color: black;
+}
+/*video*/
+
+/*footer*/
+.footer {
+    width: 100%;
+    background-color: #303030;
+    color: white;
+    text-align: center;
+}
+
+.footer .fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.footer .fa:hover {
+    opacity: 0.7;
+}
+
+.footer .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.footer .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.footer .fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.footer .fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #454545;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#scrollBtn:hover {
+    background-color: #1e1e1e;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+      float: right;
+      display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .caption {
+      top: 50%;
+      left: 10%;
+      -webkit-transform: translateY(10%);
+      -ms-transform: translateY(10%);
+      transform: translateY(10%);
+  }
+
+  .gallery-modal-content{
+      width: 80%;
+  }
+
+	.col-3 {
+      width: 100%;
+  }
+
+  .pro-modal {
+      width: 100%;
+      top: 30px;
+      left: 0;
+  }
+
+  .pro-details{
+      background: #EDFEEF;
+      padding: 30px 10px;
+  }
+
+}
+
