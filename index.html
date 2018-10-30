@@ -10,10 +10,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
     <script type="text/javascript">
         $(window).load(function() {
-            $(".se-pre-con").fadeOut("slow");;
+            //$(".se-pre-con").fadeOut("slow");;
+            var r = confirm("Try faster browsing!");
+            if (r == true) {
+                window.location.replace("http://mzi.bracumongoltori.com");
+            } else {
+                
+            }
         });
-    </script>
-        
+    </script>    
     <script>
         window.onscroll = function() {scrollFunction()};
 
@@ -32,7 +37,7 @@
     </script>
 </head>
 <body id="page">
-    <div class="se-pre-con"></div>
+    <!--<div class="se-pre-con"></div>-->
     <section class="header">
         <div class="icon-bar">
             <a href="https://facebook.com/Mzislam25" class="facebook"><i class="fa fa-facebook"></i></a> 
