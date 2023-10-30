@@ -1,491 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Personal Website, Robotics, Software Engineer">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Personal Website">
-  <meta name="author" content="Zahir, Zahirul Islam, Krittimmanush, Lonewolf">
-  <meta property="og:title" content="Zahir :: Software Engineer" />
-  <meta property="og:description" content="Personal Website, Robotics, Software Engineer" />
-  <meta property="og:image" content="https://krittimmanush.com/images/profile.jpg" />
-  <title>Zahir :: Software Engineer</title>
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Play:wght@700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-    integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
-    crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Website, Software Engineer, Robotics"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, Personal Website"/>
+    <meta name="author" content="Zahir, Mohammad Zahirul Islam, Krittimmanush"/>
+    <meta property="og:title" content="Zahir - Software Engineer" />
+    <meta property="og:description" content="Personal Website, Software Engineer, Robotics" />
+    <meta property="og:image" content="./assets/images/profile.jpg" />
+    <title>Zahir - Software Engineer</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--styles-->
+    <link href="./assets/css/app.css?v=1.0.0" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Play:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" />
 </head>
-
-<body style="background-color: #F1F5F9;">
-  <div class="container">
-    <ul class="nav justify-content-end fixed-top top-nav" id="nav">
-      <a href="index.html"><img src="images/logo.png" width="32px" height="32px" class="img-responsive logo"></a>
-      <li class="nav-item">
-        <a class="nav-link nav-scroll active" href="#home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-scroll" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-scroll" href="#experience">Experience</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-scroll" href="#project">Project</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav-scroll" href="#contact">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a href="Mohammad_Zahirul_Islam_Resume_Web.pdf" target="_blank"
-          class="nav-link btn btn-outline-info btn-sm text-white" type="button">Resume</a>
-      </li>
-      &nbsp;&nbsp;
-    </ul>
-    <div class="wrapper" id="home" data-aos="zoom-out-right" data-aos-delay="300" data-aos-duration="2000">
-      <div class="inner">
-        <div class="content ml-5">
-          <p style="color: cadetblue;">Hi! I'm </p>
-          <h1 data-aos="fade-in" data-aos-delay="1000">Mohammad Zahirul Islam</h1>
-          <p class="subtitle" data-aos="fade-in" data-aos-delay="2000">I write semicolon after the statement ;</p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <section class="about" id="about" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
-      <h3 class="title">About Me</h3>
-      <hr class="d-title">
-      <div class="row">
-        <div class="col-sm-7">
-          <p><i>Sometimes it's only madness that makes us what we are- Arkham Asylum: A serious house on serious
-              earth.</i></p>
-          <p class="description text-justify">I completed my Graduation in Computer Science and
-            Engineering from BRAC University, Bangladesh. My professional expertise lies in web based technology and
-            embedded systems. I am in deep love with robotics. And I like to travel. I have visited a lot of places in
-            Bangladesh. Also I have visited Kolkata, Mumbai, Chennai, Vellore in India and Los Angles, Las Vegas, Utah,
-            New York City in the USA.
-          </p>
-          <p class="description text-justify">Get a deeper insight into who I am as a person. My path as a Back-End
-            developer has led me to a focus in PHP and JavaScript. I've designed web and mobile app solutions driving
-            continuous improvement to processes, systems, work flow and customer responsiveness.</p>
-        </div>
-        <div class="col-sm-5 pop">
-          <a href="images/profile.jpg" data-toggle="lightbox" data-gallery="profile">
-            <img class="img-thumbnail" src="images/profile.jpg" alt="Profile Photo">
-          </a>
-        </div>
-      </div>
-    </section>
-    <br>
-    <section class="skill">
-      <h3 class="title">My Skills</h3>
-      <hr class="d-title">
-      <h5 class="subtitle">I'm Good at</h5>
-      <div class="row">
-        <div class="col-sm-4 text-center pop" data-aos="fade-right">
-          <i class="fa fa-terminal fa-4x"></i>
-          <h5>Backend Development</h5>
-          <p>frameworks like Codeigniter, Laraval, Expressjs etc Services like RestAPI, DBMS technology including MySQL,
-            MongoDB</p>
-        </div>
-        <div class="col-sm-4 text-center pop" data-aos="fade-up">
-          <i class="fa fa-wrench fa-4x"></i>
-          <h5>Robotics & Embedded System</h5>
-          <p>prototype development, Control Systems, Automation, Circuit Design, PCB Layout, MCU Programming.</p>
-        </div>
-        <div class="col-sm-4 text-center pop" data-aos="fade-left">
-          <i class="fa fa-code fa-4x"></i>
-          <h5>Code Snippet</h5>
-          <p>providing exclusive codes for Arduino based microcontroller, Python based Raspi board and other web related
-            issues.</p>
-        </div>
-      </div>
-      <hr>
-      <ul class="list-group list-group-horizontal">
-        <li class="list-group-item"><img class="img-rounded" title="php" src="images/logos/php.png" alt="php logo" width="40px">
-        </li>
-        <li class="list-group-item"><img class="img-rounded" title="laravel" src="images/logos/laravel.png" alt="laravel logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="codeigniter" src="images/logos/codeigniter.png" alt="ci logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="javascript" src="images/logos/javascript.png" alt="js logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="nodejs" src="images/logos/nodejs.png" alt="node logo" width="40px">
-        </li>
-        <li class="list-group-item"><img class="img-rounded" title="expressjs" src="images/logos/express.png" alt="express logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="mysql" src="images/logos/mysql.png" alt="mysql logo" width="40px">
-        </li>
-        <li class="list-group-item"><img class="img-rounded" title="mongo" src="images/logos/mongodb.png" alt="mongodb logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="github" src="images/logos/github.png" alt="github logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="apache" src="images/logos/apache.png" alt="apache logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="nestjs" src="images/logos/nestjs.png" alt="nestjs logo"
-            width="40px"></li>
-        <li class="list-group-item"><img class="img-rounded" title="google cloud functions" src="images/logos/google-cloud-functions.png"
-            alt="google cloud function logo" width="40px"></li>
-      </ul>
-    </section>
-    <br>
-    <section class="experience" id="experience">
-      <h3 class="title">Work Experience</h3>
-      <hr class="d-title">
-      <div class="row">
-        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <div class="card-header bg-info text-white">
-            March 2020 - Present
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Embedded Logic Operations (ELO)</h5>
-            <p class="card-subtitle mb-2 text-muted"><b>Software Engineer</b></p>
-            <p class="card-text">Scalable and maintainable API Development with JS Framework</p>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <div class="card-header bg-info text-white">
-            December 2018 - December 2019
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">BRAC University</h5>
-            <p class="card-subtitle mb-2 text-muted"><b>Research Assistant</b></p>
-            <p class="card-text">“Rescuebot”- A Project on Assisting Secondary Disaster Situation</p>
-          </div>
-        </div>
-        <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-          <div class="card-header bg-info text-white">
-            August 2017 - Present
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Freelance</h5>
-            <p class="card-subtitle mb-2 text-muted"><b>Web developer</b></p>
-            <p class="card-text">Amazing web solution built from scratch</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <br>
-    <section class="education">
-      <h3 class="title">My Education</h3>
-      <hr class="d-title">
-      <div class="row">
-        <div class="col-12 pop" data-aos="fade-right" data-aos-delay="300">
-          <p class="text-muted">2014-2018</p>
-          <h5>Bachelor of Science</h5>
-          <p>BRAC University</p>
-          <p>Computer Science & Engineering</p>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-12 pop" data-aos="fade-right" data-aos-delay="400">
-          <p class="text-muted">2011-2012</p>
-          <h5>Higher Secondary</h5>
-          <p>Chittagong Cantonment Public College</p>
-          <p>Science</p>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-12 pop" data-aos="fade-right" data-aos-delay="500">
-          <p class="text-muted">2009-2010</p>
-          <h5>Secondary</h5>
-          <p>Shaheed Lt G M Mushfique BirUttam High School</p>
-          <p>Science</p>
-        </div>
-      </div>
-    </section>
-    <br>
-    <section class="projects" id="project">
-      <h3 class="title">Latest Projects</h3>
-      <hr class="d-title">
-      <div class="card-deck">
-        <div class="card" data-toggle="modal" data-target="#modal1">
-          <img src="images/mbr_demo.jpg" class="card-img-top img-thumbnail" alt="my bike reviews">
-          <div class="card-body">
-            <h5 class="card-title">My Bike Reviews</h5>
-            <p class="card-text">My Bike Reviews is a blog that review best bicycle for you and covers all about
-              cycling.</p>
-            <p class="card-text"><small class="text-muted">Website, Blog, Codeigniter, Ajax</small></p>
-          </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#modal2">
-          <img src="images/bpos_demo.png" class="card-img-top img-thumbnail" alt="bpos">
-          <div class="card-body">
-            <h5 class="card-title">BPOS</h5>
-            <p class="card-text">A fully functional POS software for sales & inventory management system based on php..
-            </p>
-            <p class="card-text"><small class="text-muted">Web Application, Codeigniter, Ajax, Barcode</small></p>
-          </div>
-        </div>
-        <div class="card" data-toggle="modal" data-target="#modal3">
-          <img src="images/clima_demo.png" class="card-img-top img-thumbnail" alt="clima">
-          <div class="card-body">
-            <h5 class="card-title">Clima</h5>
-            <p class="card-text">A real time weather report application comes with two options website and android
-              application..</p>
-            <p class="card-text"><small class="text-muted">Website, Codeigniter, Android, Graphs, Charts</small></p>
-          </div>
-        </div>
-      </div>
-      <div class="text-center pt-3">
-        <a type="button" class="btn btn-outline-secondary" href="project.html" style="border-radius: 3px !important;"><i
-            class="fa fa-caret-square-o-right"></i> View More Projects</a>
-      </div>
-    </section>
-    <br>
-    <section class="gallery">
-      <h3 class="title">Gallery</h3>
-      <hr class="d-title">
-      <p class="subtitle desc">Some memorable momments</p>
-      <div class="row no-gutters mb-1">
-        <a href="images/1.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/1.jpg" class="img-thumbnail" width="220px">
-        </a>
-        <a href="images/2.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/2.jpg" class="img-thumbnail" width="220px">
-        </a>
-        <a href="images/3.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/3.jpg" class="img-thumbnail" width="220px">
-        </a>
-        <a href="images/4.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/4.jpg" class="img-thumbnail" width="220px">
-        </a>
-      </div>
-      <div class="row no-gutters">
-        <a href="images/5.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/5.jpg" class="img-thumbnail" width="220px">
-        </a>
-        <a href="images/6.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/6.jpg" class="img-thumbnail" width="220px">
-        </a>
-        <a href="images/7.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/7.jpg" class="img-thumbnail" width="220px">
-        </a>
-        <a href="images/8.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-sm-3">
-          <img src="images/8.jpg" class="img-thumbnail" width="220px">
-        </a>
-      </div>
-    </section>
-    <br>
-    <section class="contact" id="contact">
-      <h3 class="title">Contact</h3>
-      <hr class="d-title">
-      <div class="row">
-        <div class="col-sm-4 border-right border-info">
-          <ul class="list-group social ml-0">
-            <li class="list-group-item pop"><i class="fa fa-envelope-square fa-2x"
-                style="color: #b42626;">&nbsp;&nbsp;<a href="mailto:md.zahir25@gmail.com"
-                  target="_blank">md.zahir25@gmail.com</a></i></li>
-            <li class="list-group-item pop"><i class="fa fa-facebook-square fa-2x"
-                style="color: #0976b4;">&nbsp;&nbsp;<a href="https://www.facebook.com/Mzislam25"
-                  target="_blank">Mzislam25</a></i></li>
-            <li class="list-group-item pop"><i class="fa fa-twitter-square fa-2x" style="color: #55acee;">&nbsp;&nbsp;<a
-                  href="https://twitter.com/mzislam25" target="_blank">mzislam25</a></i></li>
-            <li class="list-group-item pop"><i class="fa fa-github-square fa-2x" style="color: #333;">&nbsp;&nbsp;<a
-                  href="https://github.com/mzislam25" target="_blank">mzislam25</a></i></li>
-            <li class="list-group-item pop"><i class="fa fa-linkedin-square fa-2x"
-                style="color: #0976b4;">&nbsp;&nbsp;<a href="https://www.linkedin.com/in/mzislam25"
-                  target="_blank">mzislam25</a></i></li>
-          </ul>
-        </div>
-        <div class="col-sm-8">
-          <br>
-          <h5>Leave me a message</h5><br>
-          <div id="msg-container" class="alert alert-warning" role="alert" style="display:none"><span id="msg"></span>
-          </div>
-          <form id="form-contact">
-            <div class="form-row">
-              <div class="form-group col-sm-6">
-                <input type="text" class="form-control" id="name" placeholder="Your name">
-              </div>
-              <div class="form-group col-sm-6">
-                <input type="email" class="form-control" id="email" placeholder="Your email-address">
-              </div>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <header>
+        <div class="header-content">
+            <p>Hi! I'm </p>
+            <h1>Mohammad Zahirul Islam</h1>
+            <p>Let's build something amazing together;</p>
+            <div class="d-grid gap-2">
+                <a class="btn btn-dark" href="https://github.com/mzislam25" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="btn btn-outline-primary" href="https://www.linkedin.com/in/mzislam25"
+                target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="btn btn-outline-danger" href="mailto:md.zahir25@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
             </div>
-            <div class="form-group">
-              <textarea class="form-control" rows="5" placeholder="Your message" id="message"></textarea>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="./assets/images/zahir_logo.png" width="75px" class="img-responsive logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./resume/assets/Mohammad_Zahirul_Islam_Resume_Web.pdf" target="_blank" class="nav-link btn btn-outline-info btn-sm text-white" type="button">Resume</a>
+                    </li>
+                </ul>
             </div>
-            <button type="submit" class="btn btn-outline-info pull-right" id="btn_send"><i class="fa fa-send"></i> Send
-              Message</button>
-          </form>
         </div>
-      </div>
-    </section>
-    <br>
-    <section class="footer text-center">
-      <p>@Krittimmanush 2020. All rights reserved.</p>
-    </section>
-  </div>
-
-  <button id="back-to-top" class="btn btn-outline-info scroll-up" title="Scroll to top" onclick="scrollUp()"><i
-      class="fa fa-chevron-up"></i></button>
-
-  <!-- projects modals -->
-  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">My Bike Reviews</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+    </nav>
+    <div class="sticky-top bg-white hidden-spacer"> </div>
+    <div class="container px-5">
+        <div class="row pb-5" id="about">
+            <h3 class="title">About Me</h3>
+            <!-- <hr class="d-title"/> -->
+            <div class="row" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div class="col-sm-7">
+                    <p><small><i>Always looking for a new challenge as a passionate software engineer.</i></small></p>
+                    <p class="description text-justify">I have completed my bachelor's degree in Computer Science and Engineering from BRAC University, Bangladesh. My professional expertise lies in web based technology and embedded systems. I am proficient in using programming languages such as JavaScript, Python along with various frameworks and tools.
+                    </p>
+                    <p class="description text-justify">Beyond my professional life, I have a deep passion for robotics and artificial intelligence. The possibilities in these fields continue to captivate my imagination.</p>
+                    <p class="description text-justify">Additionally, I'm an avid traveler who has explored the rich culture and landscapes of Bangladesh, ventured into the vibrant cities of India, and experienced the bustling metropolises of the United States, including Los Angeles, Las Vegas, Utah, and New York City.</p>
+                    </div>
+                    <div class="col-sm-5 pop">
+                    <a href="./assets/images/profile.jpg" data-toggle="lightbox" data-gallery="profile">
+                        <img class="img-fluid img-gallery" src="./assets/images/profile_thumb.jpg" alt="Profile Photo">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <img class="img-fluid" src="images/mbr.png" alt="my bike reviews">
+        <div class="row pt-3 pb-5" id="experience">
+            <h3 class="title">Work Experience</h3>
+            <!-- <hr class="d-title"> -->
+            <div class="col-12">
+                <div class="row pt-3 pb-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+                    <div class="col-md-2">
+                        <p>2023 - Present</p>
+                    </div>
+                    <div class="col-md-10">
+                        <h5><a class="elink" href="https://capia.no" target="_blank">Capia AS</a></h5>
+                        <p>Utvikler</p>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+                    <div class="col-md-2">
+                        <p>2020 - 2023</p>
+                    </div>
+                    <div class="col-md-10">
+                        <h5><a class="elink" href="https://elobyte.com/zahir" target="_blank">Embedded Logic Operations</a></h5>
+                        <p>Software Engineer</p>
+                        <ul class="list-unstyled">
+                            <li>Scalable and maintainable backend development using JavaScript/TypeScript.</li>
+                            <li>Developed a secure user authentication system using Auth0 for SaaS platform, enabling reliable user login, registration, and access control.</li>
+                            <li>Developed and maintained automated CI/CD pipelines using GitHub Actions to enable seamless integration, testing, and deployment of software applications.</li>
+                            <li>Worked on a web-based management solution for trading companies using NestJs, GraphQL, PostgreSQL and Refine.</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"/>
+                            <img src="https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/-NestJS-E0234E?style=flat&logo=nestjs"/>
+                            <img src="https://img.shields.io/badge/Amazon_AWS-232F3E?style=flat&logo=amazon-aws&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/workspace-143157?style=flat&logo=NX&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                    <div class="col-md-2">
+                        <p>2018 - 2019</p>
+                    </div>
+                    <div class="col-md-10">
+                        <h5><a class="elink" href="https://bracu.ac.bd" target="_blank">BRAC University</a></h5>
+                        <p>Research Assistant</p>
+                        <ul class="list-unstyled">
+                            <li>Conducted research on multi-disciplinary rescue robots.</li>
+                            <li>Worked on socket-based rover communication software development.</li>
+                            <li>Developed the software infrastructure for tele-operation of the all-terrain environment monitoring robot, enabling robust control, and monitoring for the remote agent.</li>
+                            <li>Worked on object recognition, autonomous navigation, and data analysis.</li>
+                        </ul>
+                        <div class="d-grid gap-2">
+                            <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white"/>
+                            <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=Raspberry%20Pi&logoColor=white"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        <div class="row pt-5 pb-5">
+            <h3 class="title">My Education</h3>
+            <hr class="d-title">
+            <div class="item col-12 mb-3" data-aos="fade-right" data-aos-delay="300">
+                <div class="pop">
+                    <p class="text-muted">2022-2024</p>
+                    <h5>Master of Science</h5>
+                    <a class="elink" href="https://en.uit.no/startsida" target="_blank">UiT Norges arktiske universitet</a>
+                    <p>Computer Science</p>
+                </div>
+            </div>
+            <div class="item col-12" data-aos="fade-right" data-aos-delay="400">
+                <div class="pop">
+                    <p class="text-muted">2014-2018</p>
+                    <h5>Bachelor of Science</h5>
+                    <a class="elink" href="https://www.bracu.ac.bd" target="_blank">BRAC University</a>
+                    <p>Computer Science & Engineering</p>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="row pt-5 pb-5" id="project">
+            <h3 class="title pb-3">Latest Projects</h3>
+            <div class="row" id="recent-projects"></div>
+            <div class="w-100 text-center pt-3">
+                <a type="button" class="btn btn-outline-secondary" href="project.html" style="border-radius: 3px !important;"><i
+                    class="fa fa-caret-square-o-right"></i> View More Projects</a>
+            </div>
+        </div>
+        <div class="row pt-5 pb-5">
+            <h3 class="title pb-3">Gallery</h3>
+            <div class="row">
+                <div class="no-gutters mb-1">
+                    <div class="row row-galley">
+                        <a href="./assets/images/1.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/1.jpg" class="img-fluid img-gallery">
+                        </a>
+                        <a href="./assets/images/2.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/2.jpg" class="img-fluid img-gallery">
+                        </a>
+                        <a href="./assets/images/3.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/3.jpg" class="img-fluid img-gallery">
+                        </a>
+                        <a href="./assets/images/4.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/4.jpg" class="img-fluid img-gallery">
+                        </a>
+                    </div>
+                </div>
+                <div class="no-gutters">
+                    <div class="row row-galley">
+                        <a href="./assets/images/5.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/5.jpg" class="img-fluid img-gallery">
+                        </a>
+                        <a href="./assets/images/6.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/6.jpg" class="img-fluid img-gallery">
+                        </a>
+                        <a href="./assets/images/7.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/7.jpg" class="img-fluid img-gallery">
+                        </a>
+                        <a href="./assets/images/8.jpg" data-toggle="lightbox" data-gallery="my-gallery" class="col-md-3">
+                            <img src="./assets/images/8.jpg" class="img-fluid img-gallery">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5" id="contact">
+            <h3 class="title">Contact</h3>
+            <hr class="d-title">
+            <form id="form-contact" class="w-100" method="POST">
+                <div id="msg-container" class="alert alert-warning" role="alert" style="display:none">
+                    <span id="msg"></span>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control mb-2" id="name" placeholder="Your name">
+                        <input type="email" class="form-control mb-2" id="email" placeholder="Your email-address">
+                        <input type="text" class="form-control mb-2" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="col-md-8">
+                        <textarea class="form-control mb-3" rows="5" placeholder="Your message" id="message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-outline-info pull-right" id="btn_send"><i class="fa fa-send"></i> Send Message</button>
+            </form>
+        </div>
+        <!-- projects modals -->
+        <div id="projects_modal"></div>
     </div>
-  </div>
-
-  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">BPOS</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img class="img-fluid" src="images/bpos.png" alt="bpos">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Clima</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <img class="img-fluid" src="images/clima.png" alt="clima">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#form-contact').on('submit', function (e) {
-        $('#btn_send').html('<i class="fa fa-refresh fa-spin"></i> Sending Message');
-        $('#btn_send').attr('disabled', 'disabled');
-        e.preventDefault();
-        var name = $('#name').val();
-        var email = $('#email').val();
-        var message = $('#message').val();
-        var data = `name=${name}&email=${email}&message=${message}`;
-        var xhr = new XMLHttpRequest();
-        // xhr.withCredentials = true;
-        xhr.addEventListener("readystatechange", function () {
-          if (this.readyState === 4) {
-            // console.log(this.responseText);
-            $('#form-contact').trigger('reset');
-            $('#btn_send').html('<i class="fa fa-send"></i> Send Message');
-            $('#btn_send').removeAttr('disabled');
-            var msg = this.responseText;
-            $('#msg').html(msg);
-            $('#msg-container').show();
-            setTimeout(function () {
-              $('#msg').html('');
-              $('#msg-container').hide();
-            }, 2000);
-          }
+    <!--container-->
+    <footer class="text-center m-5">
+        <p>@Krittimmanush <span id="date"></span>. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+        window.addEventListener("scroll",()=>{
+            if (window.scrollY > 500) {
+                document.querySelector(".navbar").classList.add("bg-dark");
+            } else {
+                document.querySelector(".navbar").classList.remove("bg-dark");
+            }
+            $(document).ready(function () {
+                $('a[href^="#"]').on('click', function () {
+                    $('a').each(function () {
+                        $(this).removeClass('active');
+                    })
+                        $(this).addClass('active');
+                });
+            });
         });
-        xhr.open("POST", "https://api.krittimmanush.com/send_email.php");
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.send(data);
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $('a[href^="#"]').on('click', function () {
-        // e.preventDefault();
-        $('a').each(function () {
-          $(this).removeClass('active');
-        })
-        $(this).addClass('active');
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    window.onscroll = function () {
-      scrollFunction();
-      onScroll();
-    };
-    function scrollFunction() {
-      $('.top-nav').css('background-color', 'rgba(95, 158, 160, 0.7)');
-      if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-        document.getElementById("back-to-top").style.visibility = "visible";
-      } else {
-        document.getElementById("back-to-top").style.visibility = "hidden";
-      }
-    }
-    function onScroll() {
-      var scrollPos = $(document).scrollTop();
-      $('#nav a.nav-scroll').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-          $('#nav a').removeClass("active");
-          currLink.addClass("active");
-        }
-        else {
-          currLink.removeClass("active");
-        }
-      });
-    }
-    function scrollUp() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
-    crossorigin="anonymous"></script>
-  <script>
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-  </script>
+    </script>
+    <script>
+        $(document).ready(function () {
+            fetch('./assets/projects.json')
+            .then((response) => response.json())
+            .then((data) => {
+                let html = '';
+                data.recent_projects.forEach((element,i)=>{
+                    html+='<div class="card w-100 mx-auto mb-3 border-light rounded card-recent-project">'+
+                        '<div class="card-body row">'+
+                            '<div class="col-4 text-right">'+
+                                '<img class="img-thumbnail w-50" src="./assets/images/'+element.banner+'">'+
+                            '</div>'+
+                            '<div class="col-8">'+
+                                '<h5 class="card-title"><a href="'+element.url+'" target="_blank">'+element.title+' <i class="fa fa-link"></i></a></h5>'+
+                                '<p class="card-text">'+element.subtitle+'</p>'+
+                                '<p class="card-text text-justify">'+element.description+'</p>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>';
+                });
+                $('#recent-projects').html(html);
+            });
+            
+            $('#form-contact').on('submit', function (e) {
+                $('#btn_send').html('<i class="fa fa-refresh fa-spin"></i> Sending Message');
+                $('#btn_send').attr('disabled', 'disabled');
+                e.preventDefault();
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#subject').val()+"\n"+$('#message').val();
+                var data = `name=${name}&email=${email}&message=${message}`;
+                var xhr = new XMLHttpRequest();
+                // xhr.withCredentials = true;
+                xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    // console.log(this.responseText);
+                    $('#form-contact').trigger('reset');
+                    $('#btn_send').html('<i class="fa fa-send"></i> Send Message');
+                    $('#btn_send').removeAttr('disabled');
+                    var msg = this.responseText;
+                    $('#msg').html(msg);
+                    $('#msg-container').show();
+                    setTimeout(function () {
+                    $('#msg').html('');
+                    $('#msg-container').hide();
+                    }, 2000);
+                }
+                });
+                xhr.open("POST", "https://api.krittimmanush.com/send_email.php");
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.send(data);
+            });
+        });
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+        integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
 </body>
-
 </html>

@@ -1,0 +1,207 @@
+{
+    "categories":[
+        "web",
+        "desktop",
+        "mobile",
+        "robotics"
+    ],
+    "projects":[
+        {
+            "id": 1,
+            "title": "IMS",
+            "subtitle": "Sales & Inventory Management System",
+            "description": "A fully functional software for sales & inventory management system based on php.",
+            "banner": "bpos_demo.png",
+            "url": "",
+            "images":[
+                "bpos.png"
+            ],
+            "tags": ["web application", "codeigniter", "ajax", "barcode"],
+            "category": "web",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 2,
+            "title": "Clima",
+            "subtitle": "Weather report application",
+            "description": "A real time weather report application comes with two options website and android application.",
+            "banner": "clima_demo.png",
+            "url": "",
+            "images":[
+                "clima.png"
+            ],
+            "tags": ["website", "codeigniter", "android", "graphs", "charts"],
+            "category": "web",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 3,
+            "title": "Extreme",
+            "subtitle": "Rover control GUI",
+            "description": "By connecting with robots via serial connection, robots can be easily operated. This application makes the control of remote device very easy. This GUI is used in mongol-tori for controlling and navigating the rover.",
+            "banner": "control_gui_demo.jpg",
+            "url": "",
+            "images":[
+                "control_gui.jpg"
+            ],
+            "tags": ["java", "serial communication", "gui"],
+            "category": "desktop",
+            "keywords": [],
+            "github_url": "https://github.com/mzislam25/Arduino-Java-Serial-Port-Communication-GUI.git"
+        },
+        {
+            "id": 4,
+            "title": "Sensor GUI",
+            "subtitle": "Monitor, configure, and analyze data from sensors in real-time",
+            "description": "A software application that provides a user-friendly interface for interacting with sensors and visualizing the data they collect.",
+            "banner": "science_gui_demo.jpg",
+            "url": "",
+            "images":[
+                "science_gui.jpg"
+            ],
+            "tags": ["c#", "arduino", "serial communication"],
+            "category": "desktop",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 5,
+            "title": "Fusion",
+            "subtitle": "Vehicle activities monitoring system",
+            "description": "A technology-driven solution designed to track, manage, and analyze the activities and data related to vehicles.",
+            "banner": "fusion_demo.png",
+            "url": "",
+            "images":[
+                "fusion.png"
+            ],
+            "tags": ["web application"],
+            "category": "web",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 6,
+            "title": "Btduino",
+            "subtitle": "android controlled arduino based rc car using bluetooth module(HC 05/06).",
+            "description": "A fun and educational project that combines mobile technology and robotics.",
+            "banner": "bt_demo.png",
+            "url": "",
+            "images":[
+                "bt.png"
+            ],
+            "tags": ["android application"],
+            "category": "mobile",
+            "keywords": [],
+            "github_url": "https://github.com/mzislam25/Btduino.git"
+        },
+        {
+            "id": 7,
+            "title": "Bus Ticket",
+            "subtitle": "An application for BRTC buses in Dhaka.",
+            "description": "An application designed to streamline and simplify the process of booking, purchasing, and managing bus tickets for travelers.",
+            "banner": "bus_ticket_demo.png",
+            "url": "",
+            "images":[
+                "bus_ticket.png"
+            ],
+            "tags": ["android application"],
+            "category": "mobile",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 8,
+            "title": "Traffic Analysis",
+            "subtitle": "Crowd source based traffic analysis",
+            "description": "It provides a convenient and efficient way for passengers to plan their journeys, select routes, and access essential travel information",
+            "banner": "traffic_analysis_demo.png",
+            "url": "",
+            "images":[
+                "traffic_analysis.png"
+            ],
+            "tags": ["android application"],
+            "category": "mobile",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 9,
+            "title": "Interceptor",
+            "subtitle": "Remote-controlled combat-oriented robots",
+            "description": "It includes robot design, remote operation, and tactical decision-making, showcasing a passion for robotics and a drive for competition.",
+            "banner": "interceptor_demo.jpg",
+            "url": "",
+            "images":[
+                "interceptor.jpg"
+            ],
+            "tags": ["robotics"],
+            "category": "robotics",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 10,
+            "title": "BRACU Mongol-Tori",
+            "subtitle": "",
+            "description": "",
+            "url": "https://www.facebook.com/bracumongoltori",
+            "banner": "mt_demo.jpg",
+            "images":[
+                "mt.jpg"
+            ],
+            "tags": ["robotics"],
+            "category": "robotics",
+            "keywords": [],
+            "github_url": ""
+        }
+    ],
+    "recent_projects":[
+        {
+            "id": 1,
+            "title": "AIDRR",
+            "subtitle": "AI based disaster risk reduction.",
+            "description": "A novel hybrid AI approach for fire and smoke detection. Traditional CCTV based vision approach is used in mitigating the risks of two of the most common incidents in Bangladesh. Detect early fire incidents and reduce response time. GSM based hardware to trigger manually and warning generation with verification. IoT-based call point is an additional layer notifying the authorities.",
+            "url": "https://dbot.airobotics-lab.com",
+            "banner": "aidrr.jpeg",
+            "images":[
+        
+            ],
+            "tags": ["web application", "flask", "nestjs", "react"],
+            "category": "web",
+            "keywords": [],
+            "github_url": ""
+        },
+        {
+            "id": 2,
+            "title": "faunadb-nestjs",
+            "subtitle": "Reusable NestJs package for Fauna dB connection.",
+            "description": "",
+            "url": "https://www.npmjs.com/package/faunadb-nestjs",
+            "banner": "npm.svg",
+            "images":[
+        
+            ],
+            "tags": [],
+            "category": "",
+            "keywords": [],
+            "github_url": "https://github.com/mzislam25/faunadb-nestjs"
+        },
+        {
+            "id": 3,
+            "title": "use-file-upload-s3",
+            "subtitle": "React hooks library to add dynamic functionality to s3 file uploads into your react application.",
+            "description": "",
+            "url": "https://www.npmjs.com/package/use-file-upload-s3",
+            "banner": "npm.svg",
+            "images":[
+        
+            ],
+            "tags": [],
+            "category": "",
+            "keywords": [],
+            "github_url": "https://github.com/mzislam25/use-file-upload-s3"
+        }
+    ]
+}
