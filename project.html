@@ -2,347 +2,152 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal Website, Robotics, Software Engineer">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Personal Website">
-    <meta name="author" content="Zahir, Zahirul Islam, Krittimmanush, Lonewolf">
-    <title>Projects - Zahir</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css?v=1.0.0" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Play:wght@700&display=swap" rel="stylesheet">
+    <meta name="description" content="Personal Website, Software Engineer, Robotics"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript, Personal Website"/>
+    <meta name="author" content="Zahir, Mohammad Zahirul Islam, Krittimmanush"/>
+    <meta property="og:title" content="Zahir - Software Engineer" />
+    <meta property="og:description" content="Personal Website, Software Engineer, Robotics" />
+    <meta property="og:image" content="./assets/images/profile.jpg" />
+    <title>Zahir - Software Engineer</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--styles-->
+    <link href="./assets/css/app.css?v=1.0.0" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Nunito:wght@700&family=Play:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+        integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+        crossorigin="anonymous" />
 </head>
-<body style="background-color: #F1F5F9;">
-    <div class="container">
-        <ul class="nav justify-content-end fixed-top top-nav" style="background-color: rgba(95, 158, 160, 1);">
-            <a href="index.html"><img src="images/logo.png" width="32px" height="32px" class="img-responsive logo"></a>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html#home">Back to Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="#">Project</a>
-            </li>
-            &nbsp;&nbsp;
-        </ul>
-        <section class="projects" id="project" style="padding-top: 60px;">
-            <h3 class="title text-center">Projects</h3>
-            <br>
-            <div class="card-deck">
-                <div class="card" data-toggle="modal" data-target="#modal1">
-                    <img src="images/control_gui_demo.jpg" class="card-img-top img-thumbnail" alt="control gui">
-                    <div class="card-body">
-                        <h5 class="card-title">Rover Control GUI</h5>
-                        <p class="card-text"><small class="text-muted">Java, Serial Communication, GUI</small></p>
-                    </div>
-                </div>
-                <div class="card" data-toggle="modal" data-target="#modal2">
-                    <img src="images/ecourier_demo.png" class="card-img-top img-thumbnail" alt="ecourier">
-                    <div class="card-body">
-                        <h5 class="card-title">Ecourier</h5>
-                        <p class="card-text"><small class="text-muted">Website, Html, Css, JavaScript</small></p>
-                    </div>
-                </div>
-                <div class="card" data-toggle="modal" data-target="#modal3">
-                    <img src="images/mt_demo.png" class="card-img-top img-thumbnail" alt="mongol tori">
-                    <div class="card-body">
-                        <h5 class="card-title">BRACU Mongol-tori</h5>
-                        <p class="card-text"><small class="text-muted">Website, Codeigniter, Team website</small></p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card-deck">
-                <div class="card" data-toggle="modal" data-target="#modal4">
-                    <img src="images/msi_demo.png" class="card-img-top img-thumbnail" alt="msi">
-                    <div class="card-body">
-                        <h5 class="card-title">MSI</h5>
-                        <p class="card-text"><small class="text-muted">Website, Portfolio</small></p>
-                    </div>
-                </div>
-                <div class="card" data-toggle="modal" data-target="#modal5">
-                    <img src="images/science_gui_demo.jpg" class="card-img-top img-thumbnail" alt="sensor gui">
-                    <div class="card-body">
-                        <h5 class="card-title">Sensor GUI</h5>
-                        <p class="card-text"><small class="text-muted">C#, Arduino, Serial Communication</small></p>
-                    </div>
-                </div>
-                <div class="card" data-toggle="modal" data-target="#modal6">
-                    <img src="images/fusion_demo.png" class="card-img-top img-thumbnail" alt="fusion">
-                    <div class="card-body">
-                        <h5 class="card-title">Fusion</h5>
-                        <p class="card-text"><small class="text-muted">Web application</small></p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card-deck">
-                <div class="card" data-toggle="modal" data-target="#modal7">
-                    <img src="images/bt_demo.png" class="card-img-top img-thumbnail" alt="btduino">
-                    <div class="card-body">
-                        <h5 class="card-title">Btduino</h5>
-                        <p class="card-text"><small class="text-muted">Android Application</small></p>
-                    </div>
-                </div>
-                <div class="card" data-toggle="modal" data-target="#modal8">
-                    <img src="images/bus_ticket_demo.png" class="card-img-top img-thumbnail" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Bus Ticket</h5>
-                        <p class="card-text"><small class="text-muted">Android Application</small></p>
-                    </div>
-                </div>
-                <div class="card" data-toggle="modal" data-target="#modal9">
-                    <img src="images/traffic_analysis_demo.png" class="card-img-top img-thumbnail" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Traffic Analysis</h5>
-                        <p class="card-text"><small class="text-muted">Android Application</small></p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card-deck">
-                <div class="card border-0"></div>
-                <div class="card" data-toggle="modal" data-target="#modal10">
-                    <img src="images/noteit_demo.png" class="card-img-top img-thumbnail" alt="noteit">
-                    <div class="card-body">
-                        <h5 class="card-title">Noteit</h5>
-                        <p class="card-text"><small class="text-muted">Web application</small></p>
-                    </div>
-                </div>
-                <div class="card border-0"></div>
-            </div>
-        </section>
-        <br>
-        <section class="footer text-center">
-            <p>@Krittimmanush 2020. All rights reserved.</p>
-        </section>
-    </div>
-
-    <button id="back-to-top" class="btn btn-outline-info scroll-up" title="Scroll to top" onclick="scrollUp()"><i class="fa fa-chevron-up"></i></button>
-
-    <!-- projects modals -->
-    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Rover Control GUI</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="desc">By connectiong with robots via serial connection, robots can be easily operated. This application makes the control of remote device very easy. This GUI is used in mongol-tori for controlling and navigating the rover.</p>
-                <img class="img-fluid" src="images/control_gui.jpg" alt="java control gui">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><img src="./assets/images/zahir_logo.png" width="75px" class="img-responsive logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./resume/assets/Mohammad_Zahirul_Islam_Resume_Web.pdf" target="_blank" class="nav-link btn btn-outline-info btn-sm text-white" type="button">Resume</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+    <div class="container px-5" style="padding-top: 80px;">
+        <h3 class="title">All Projects</h3>
+        <!-- <div class="row" id="recent-projects"></div> -->
+        <div id="category" class="d-grid gap-2 mt-5 mb-5 text-center"></div>
+        <div id="row-project" class="row"></div>
+        
+        <div id="projects_modal"></div>
     </div>
-
-    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Ecourier</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/ecourier.png" alt="ecourier">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">BRACU Mongol-tori</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="desc">The website represents the team details, rover gallery and their journey to University Rover Challenge, world's premier robotics competition for univerisity students, organized by The Mars Society.</p>
-                <img class="img-fluid" src="images/mt.png" alt="bracu mongol-tori">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">MSI</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/msi.png" alt="msi">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Sensor GUI</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="desc">The platform being used is an Arduino board with other sensors e.g. CO Sensor (MQ7), CO2 Sensor (MQ135), H2 (MQ8), Temperature & Humidity Sensor (DHT22), Soil Temperature Sensor (DS18B20) and Soil Moisture Sensor. The GUI is developed in C# interprets the sensor readings into custom gauges which offer a graphical perception that makes it easy to distinguish between different states of perception.</p>
-                <img class="img-fluid" src="images/science_gui.jpg" alt="sensor gui">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Fusion</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/fusion.png" alt="fusion">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Btduino</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/bt.png" alt="btduino">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Bus Ticket</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/bus_ticket.png" alt="bus ticket">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Traffic Analysis</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/traffic_analysis.png" alt="traffic analysis">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="modal10" tabindex="-1" role="dialog" aria-labelledby="modal10Title" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle">Noteit</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img class="img-fluid" src="images/noteit.png" alt="noteit">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-            </div>
-            </div>
-        </div>
-    </div>
-    <!--end projects modal-->
-
+    <!--container-->
+    <footer class="text-center m-5">
+        <p>@Krittimmanush <span id="date"></span>. All rights reserved.</p>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-        window.onscroll = function() {
-            scrollFunction();
-        };
-        function scrollFunction() {
-            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-            document.getElementById("back-to-top").style.display = "block";
-            } else {
-            document.getElementById("back-to-top").style.display = "none";
-            }
-        }
-        function scrollUp() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-        // duration: 500,
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+        let projects = [];
+        fetch('./assets/projects.json')
+        .then((response) => response.json())
+        .then((data) => {
+            projects = data.projects;
+            let cat_html='<button type="button" id="all" class="btn btn-outline-secondary active" onClick="getProjects(\'all\')">All</button> ';
+            data.categories.forEach(cat=>{
+                cat_html+='<button type="button" id="'+cat+'" class="btn btn-outline-secondary" onClick="getProjects(\''+cat+'\')">'+cat.charAt(0).toUpperCase() + cat.slice(1)+'</button> ';
+            });
+            $('#category').html(cat_html);
+            let recent_projects_html = '';
+            data.recent_projects.forEach((element,i)=>{
+                recent_projects_html+='<div class="card w-100 mx-auto mb-3 border-light rounded card-recent-project">'+
+                '<div class="card-body">'+
+                        '<h5 class="card-title"><a href="'+element.url+'" target="_blank">'+element.title+' <i class="fa fa-link"></i></a></h5>'+
+                        '<p class="card-text">'+element.subtitle+'</p>'+
+                    '</div>'+
+                '</div>';
+            });
+            $('#recent-projects').html(recent_projects_html);
+            getProjects('all');
         });
+
+        function getProjects(category){
+            const buttons = $("#category .btn"); 
+            for (let i = 0; i < buttons.length; i++) { 
+                buttons[i].classList.remove("active"); 
+            } 
+            $(`#${category}`)[0].classList.add("active"); 
+            let data = projects;
+            let display_html = '';
+            let modal_html = '';
+            if(category != 'all'){
+                data = projects.filter(e=>e.category===category);
+            }
+            data.forEach((element, i) => {
+                tags_html='';
+                element.tags.forEach(e=>{
+                    tags_html+='<span class="badge badge-secondary">'+e+'</span> ';
+                })
+                images_html='';
+                element.images.forEach(img=>{
+                    images_html+='<img class="img-fluid" src="./assets/images/'+img+'" alt="'+img+'">';
+                })
+                display_html+='<div class="card mb-3 card-project" data-toggle="modal" data-target="#modal'+(element.id)+'">'+
+                    '<img src="./assets/images/'+element.banner+'" class="card-img-top img-thumbnail" alt="'+element.banner+'">'+
+                    '<div class="card-body">'+
+                        '<h5 class="card-title">'+element.title+'</h5>'+
+                        '<p class="card-text">'+element.subtitle+'</p>'+
+                        '<p class="card-text">'+tags_html+'</p>'+
+                    '</div>'+
+                '</div>';
+                modal_html+='<div class="modal fade" id="modal'+(element.id)+'" tabindex="-1" role="dialog" aria-labelledby="modal'+(element.id)+'Title" aria-hidden="true">'+
+                    '<div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">'+
+                        '<div class="modal-content">'+
+                            '<div class="modal-header">'+
+                                '<h5 class="modal-title" id="modal'+(element.id)+'Title">'+element.title+'</h5>'+
+                                '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'+
+                                    '<span aria-hidden="true">&times;</span>'+
+                                '</button>'+
+                            '</div>'+
+                            '<div class="modal-body">'+
+                                '<p>'+element.description+'</p>'+
+                                '<div>'+images_html+'</div>'+
+                            '</div>'+
+                            '<div class="modal-footer">'+
+                                '<button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'+
+                '</div>';
+            });
+            $("#row-project").html(display_html);
+            $("#projects_modal").html(modal_html);
+        }
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </body>
 </html>

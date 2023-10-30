@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Lato&family=Roboto:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+header {
+    height:90vh;
+    min-height:400px;
+    background-size:cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/banner4.jpg);
+    display: table;
+    background-size: cover;
+    width: 100%;
+    -webkit-animation: slidein 60s;
+    animation: slidein 60s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate; 
+}
+@-webkit-keyframes slidein {
+    from {background-position: center; background-size:2000px; }
+    to {background-position: -50px 0px; background-size:1750px; } 
+}
+ @keyframes slidein {
+    from {background-position: center; background-size:2000px; }
+    to {background-position: -50px 0px; background-size:1750px; } 
+}
+
+.hidden-spacer {
+    height: 56px
+}
+.header-content{
+    width: 100%;
+    padding: 200px 120px;
+}
+.header-content > h1{
+    color: aliceblue;
+    font-family: "AR One Sans";
+}
+.header-content > p{
+    font-family: "AR One Sans";
+    color: cadetblue;
+    font-size: 20px;
+}
+.title{
+    text-transform: uppercase;
+    font-family: 'AR One Sans';
+    font-weight: bold;
+}
+hr.d-title{
+    width: 100%;
+    height: 0.7px;
+    background-color: cadetblue;
+}
+
+.card-project{
+    border-radius: 0;
+    border: 1px solid cadetblue;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.2s;
+    transition-property: transform;
+    width: 32%;
+    height: 350px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+}
+
+.card-recent-project:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+.pop{
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.2s;
+    transition-property: transform;
+}
+.pop:hover{
+    transform: scale(1.01) !important;
+}
+
+#education{
+    line-height: 14px;
+}
+#education .item{
+    margin: 5px;
+    border-left: 2px solid cadetblue;
+}
+.elink{
+    color: cadetblue;
+    text-decoration: none;
+    font-family: 'AR One Sans';
+    font-weight: 500;
+}
+.elink:hover{
+    color: darkcyan;
+    text-decoration: none;
+}
+.description{
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+}
+.row-galley a{
+    padding: 3px;
+}
+.img-gallery{
+    border: 3px solid rgb(250, 250, 250);
+    border-radius: 3px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 2px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: cadetblue;
+}
+
+
+@media screen and (max-width: 576px) {
+    .header-content{
+        padding: 300px 50px;
+    }
+    .card{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
